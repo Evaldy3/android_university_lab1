@@ -3,26 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="480dp"
+    android:layout_height="420dp"
+    android:layout_marginTop="20dp"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/ranking"
-        android:layout_width="50dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="10dp"
-        android:text=" 5" />
-
-    <ImageView
-        android:id="@+id/book_image"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/ranking"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:text=" 5"
+            android:textColor="#FF071C"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/book_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            tools:srcCompat="@tools:sample/avatars" />
+    </RelativeLayout>
+
 
     <TextView
         android:id="@+id/book_title"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:text="  A GIRL'S GUIDE TO MOVING ON"
@@ -31,11 +41,24 @@
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Debbie Macomber"
+        android:textAlignment="viewStart"
+        android:textColor="#2C2B2B"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <TextView
         android:id="@+id/book_description"
         android:layout_width="wrap_content"
         android:layout_height="84dp"
         android:layout_marginLeft="10dp"
         android:layout_marginBottom="10dp"
+        android:fontFamily="serif"
         android:text="A mother and her daughter-in-law both leave unhappy marriages and take up with new men."
         android:textAlignment="viewStart"
         android:textSize="14sp" />

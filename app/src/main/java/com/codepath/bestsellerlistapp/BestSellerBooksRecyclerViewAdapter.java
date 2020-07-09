@@ -59,6 +59,9 @@ public class BestSellerBooksRecyclerViewAdapter extends RecyclerView.Adapter<Bes
         String book_title = String.format( bestSellerBook.title);
         holder.mBookTitle.setText(book_title);
 
+        String author = String.format( bestSellerBook.author);
+        holder.mBookAuthor.setText(author);
+
 
         Glide.with(holder.mView)
                 .load(bestSellerBook.bookImageUrl)
@@ -75,6 +78,7 @@ public class BestSellerBooksRecyclerViewAdapter extends RecyclerView.Adapter<Bes
         public final View mView;
         public final TextView mBookRanking;
         public final TextView mBookTitle;
+        public final TextView mBookAuthor;
         public final TextView mBookDescription;
         public final ImageView mBookImage;
         public final Button mBookButton;
@@ -85,6 +89,7 @@ public class BestSellerBooksRecyclerViewAdapter extends RecyclerView.Adapter<Bes
             mView = view;
             mBookRanking = (TextView) view.findViewById(R.id.ranking);
             mBookTitle = (TextView) view.findViewById(R.id.book_title);
+            mBookAuthor = (TextView) view.findViewById(R.id.author);
             mBookDescription = (TextView) view.findViewById(R.id.book_description);
             mBookImage = (ImageView) view.findViewById(R.id.book_image);
             mBookButton = (Button) view.findViewById(R.id.buy_button);
@@ -92,7 +97,7 @@ public class BestSellerBooksRecyclerViewAdapter extends RecyclerView.Adapter<Bes
 
         @Override
         public String toString() {
-            return mBookRanking.toString() + " '" + mBookImage.toString() + "'"+ mBookTitle.getText()+"'"  + mBookDescription.getText() + "'" ;
+            return mBookRanking.toString() + " '" + mBookImage.toString() + "'"+ mBookTitle.getText()+"'"+ mBookAuthor.getText()+"'"  + mBookDescription.getText() + "'" ;
         }
     }
 }
