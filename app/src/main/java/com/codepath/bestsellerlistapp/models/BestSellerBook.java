@@ -4,6 +4,8 @@ import com.google.gson.annotations.SerializedName;
 
 public class BestSellerBook {
 
+
+
    @SerializedName("rank")
    public int rank;
 

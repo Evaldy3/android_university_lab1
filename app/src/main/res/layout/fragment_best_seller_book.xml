@@ -1,20 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="480dp"
     android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ranking"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="10dp"
+        android:text=" 5" />
+
+    <ImageView
+        android:id="@+id/book_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/book_title"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:textAppearance="?attr/textAppearanceListItem" />
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="  A GIRL'S GUIDE TO MOVING ON"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/book_author"
+        android:id="@+id/book_description"
         android:layout_width="wrap_content"
+        android:layout_height="84dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="A mother and her daughter-in-law both leave unhappy marriages and take up with new men."
+        android:textAlignment="viewStart"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/buy_button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:textAppearance="?attr/textAppearanceListItem" />
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:background="#0091ea"
+        android:text="BUY ON  AMAZON" />
+
 </LinearLayout>
